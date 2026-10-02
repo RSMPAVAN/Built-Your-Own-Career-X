@@ -1,0 +1,148 @@
+{
+ "L0": {
+  "ok": true,
+  "model": "veo-3.1-fast-generate-001",
+  "frame": "S02_nithya_close",
+  "start": 0.0,
+  "end": 3.4800000190734863,
+  "log": [
+   [
+    "S02_nithya_close",
+    "veo-3.1-fast-generate-001",
+    "generated",
+    0.4,
+    1.0,
+    [],
+    "This is NAVURA, an AI reimagined history conversation.",
+    "This is Navura, an AI reimagined history conversation."
+   ]
+  ]
+ },
+ "L1": {
+  "ok": true,
+  "model": "veo-3.1-fast-generate-001",
+  "frame": "S01_nithya_medium",
+  "start": 0.0,
+  "end": 5.519999980926514,
+  "log": [
+   [
+    "S01_nithya_medium",
+    "veo-3.1-fast-generate-001",
+    "generated",
+    0.6,
+    1.0,
+    [],
+    "You set out from Sabarmati with 78 volunteers. Why choose salt for this march?",
+    "You set out from Sabarmati with 78 volunteers. Why choose salt for this march?"
+   ]
+  ]
+ },
+ "L2": {
+  "ok": false,
+  "log": [
+   [
+    "S03_gandhi_medium",
+    "veo-3.1-fast-generate-001",
+    "filtered"
+   ],
+   [
+    "S03_gandhi_medium",
+    "veo-3.1-generate-001",
+    "filtered"
+   ],
+   [
+    "S04_gandhi_close",
+    "veo-3.1-fast-generate-001",
+    "filtered"
+   ],
+   [
+    "S04_gandhi_close",
+    "veo-3.1-generate-001",
+    "filtered"
+   ],
+   [
+    "S03_gandhi_medium",
+    "veo-3.1-fast-generate-001",
+    "filtered"
+   ],
+   [
+    "S03_gandhi_medium",
+    "veo-3.1-generate-001",
+    "filtered"
+   ]
+  ]
+ },
+ "L3": {
+  "ok": true,
+  "model": "veo-3.1-fast-generate-001",
+  "frame": "S02_nithya_close",
+  "start": 0.0,
+  "end": 5.480000019073486,
+  "log": [
+   [
+    "S02_nithya_close",
+    "veo-3.1-fast-generate-001",
+    "generated",
+    0.6,
+    1.0,
+    [],
+    "The SALT Act of 1882 taxed SALT under a British monopoly.",
+    "The Salt Act of 1882 taxed salt under a British monopoly."
+   ]
+  ]
+ },
+ "L4": {
+  "ok": false,
+  "log": [
+   [
+    "S04_gandhi_close",
+    "veo-3.1-fast-generate-001",
+    "filtered"
+   ],
+   [
+    "S04_gandhi_close",
+    "veo-3.1-generate-001",
+    "filtered"
+   ],
+   [
+    "S03_gandhi_medium",
+    "veo-3.1-fast-generate-001",
+    "filtered"
+   ],
+   [
+    "S03_gandhi_medium",
+    "veo-3.1-generate-001",
+    "filtered"
+   ],
+   [
+    "S04_gandhi_close",
+    "veo-3.1-fast-generate-001",
+    "filtered"
+   ],
+   [
+    "S04_gandhi_close",
+    "veo-3.1-generate-001",
+    "filtered"
+   ]
+  ]
+ },
+ "L5": {
+  "ok": true,
+  "model": "veo-3.1-fast-generate-001",
+  "frame": "S01_nithya_medium",
+  "start": 0.0,
+  "end": 5.460000038146973,
+  "log": [
+   [
+    "S01_nithya_medium",
+    "veo-3.1-fast-generate-001",
+    "generated",
+    0.6,
+    1.0,
+    [],
+    "After walking about 240 miles to Dandi, you picked up natural salt.",
+    "After walking about 240 miles to Dandi, you picked up natural salt."
+   ]
+  ]
+ }
+}

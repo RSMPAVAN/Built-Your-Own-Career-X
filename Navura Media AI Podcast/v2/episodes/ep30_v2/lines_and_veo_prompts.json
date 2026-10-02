@@ -1,0 +1,67 @@
+[
+ {
+  "id": "L0",
+  "who": "Nithya",
+  "text": "This is Navura, an AI-reimagined history conversation.",
+  "frames": [
+   "S02_nithya_close"
+  ],
+  "seconds": 4,
+  "veo_prompt": "Shot: tight close-up framing to match S02_nithya_close, showing Nithya from mid-chest up on the right side of frame, city river and bridge sunset softly visible through the large studio window behind her, angled slightly toward the empty chair opposite. Subject and image consistency: Nithya, the podcast host, in the same teal and gold silk sari with matching blouse, natural makeup, small earrings, dark hair tied back, seated at the same wooden NM podcast table with the NM-branded desk microphone on a short stand directly in front of her and the NM mug beside it, same modern acoustic panels and warm accent lights in the background, calm real podcast conversation recorded in a studio. Action: Nithya speaks naturally toward the unseen guest off-screen to the left, lips clearly articulating the words, making small expressive hand gestures near the table, subtle nods and head movements, occasional soft blinks, posture relaxed but attentive. Dialogue: \"This is Navura, an AI-reimagined history conversation.\" (Navura pronounced 'nah-VOO-rah'; Nithya speaks in a warm, clear, curious Indian English female voice at a natural conversational pace.) Camera: static, no movement or reframing. Lighting and style: match the still with soft, warm, cinematic studio lighting on her face from the front-right, gentle contrast, sunset colors glowing through the window, rich but natural color grading, high-quality realistic detail. Audio: only Nithya\u2019s voice and subtle studio room tone, no music, no other speakers. Negatives: no camera movement, no change of angle or framing, no other people, no overhead boom mics, no text on screen, no logos added beyond the existing NM mic and mug, no exaggerated gestures, no laughter or interruptions, no background music, no scene changes or cuts. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L1",
+  "who": "Nithya",
+  "text": "You set out from Sabarmati with seventy-eight volunteers. Why choose salt for this march?",
+  "frames": [
+   "S01_nithya_medium",
+   "S02_nithya_close"
+  ],
+  "seconds": 6,
+  "veo_prompt": "Shot: medium shot framing to match S01_nithya_medium, showing Nithya seated on the left side of the wooden podcast table from waist up, with the empty guest chair on the right and the wide studio window revealing the river and bridge at sunset in the background. Subject and image consistency: Nithya, the podcast host, wearing the same teal and gold sari and blouse, same hairstyle, earrings, and makeup, seated in the same office chair, the NM-branded desk microphone on a short stand placed in front of her on the table and the NM mug nearby, same studio layout with acoustic wall panels and warm LED edge lighting, calm real podcast conversation recorded in a studio. Action: Nithya turns slightly toward the unseen Gandhi off-screen to the right, speaking directly to him, lips clearly forming the words, one hand lightly resting near the mug while the other makes small natural conversational gestures, gentle nods and blinks, composed and engaged. Dialogue: \"You set out from Sabarmati with seventy-eight volunteers. Why choose salt for this march?\" (Navura pronounced 'nah-VOO-rah'; Sabarmati pronounced 'SAH-bur-mah-tee'; Gandhi pronounced 'GAHN-dee' if referenced; Nithya uses a warm, clear, curious Indian English female voice at a natural conversational pace.) Camera: static, locked-off medium shot, no zoom or pan. Lighting and style: identical to S01_nithya_medium with soft, warm, cinematic studio lighting, subtle highlights on her sari, sunset tones through the window, realistic textures and depth of field. Audio: only Nithya\u2019s voice plus quiet neutral studio room tone, no other speakers or sounds. Negatives: no camera motion, no mic arm above the table, no additional props, no text or graphics, no dramatic gestures, no laughter or overlap from other voices, no music, no scene transitions or cuts. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L2",
+  "who": "Gandhi",
+  "text": "Next to air and water, salt is perhaps the greatest necessity of life.",
+  "frames": [
+   "S03_gandhi_medium",
+   "S04_gandhi_close"
+  ],
+  "seconds": 6,
+  "veo_prompt": "Shot: medium shot framing to match S03_gandhi_medium, showing the elderly Mahatma Gandhi, AI-reimagined, seated on the right side of the wooden podcast table from waist up, facing slightly left toward the unseen host, with the large window and river bridge at sunset filling the background. Subject and image consistency: the elderly Mahatma Gandhi, AI-reimagined, in the same simple off-white homespun cloth draped around his shoulders and torso, thin frame, round glasses, gentle expression, seated in the same office chair, with the NM-branded desk microphone on a short stand in front of him on the table and the NM mug to the side, identical studio environment with acoustic panels and warm LED edge lighting, calm real podcast conversation recorded in a studio. Action: Gandhi looks toward the off-screen Nithya as he speaks, lips clearly articulating each word, giving a soft, thoughtful smile, making very small, unhurried hand movements near the tabletop, subtle nods and occasional blinks, body posture relaxed and peaceful. Dialogue: \"Next to air and water, salt is perhaps the greatest necessity of life.\" (Gandhi pronounced 'GAHN-dee'; his voice is a calm, gentle, elderly Indian man\u2019s voice, soft and unhurried with a brief pause before speaking.) Camera: static, locked-off medium shot with no movement. Lighting and style: match S03_gandhi_medium with warm, soft, cinematic studio lighting gently modeling his face, sunset glow through the window, realistic textures in skin and fabric, rich yet natural color grading. Audio: only Gandhi\u2019s voice and subtle studio room tone, no other voices or sounds. Negatives: no camera movement, no overhead boom mic, no added text or graphics, no other people entering frame, no exaggerated or sudden gestures, no music, no ambient street noise, no cuts or transitions. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L3",
+  "who": "Nithya",
+  "text": "The Salt Act of eighteen eighty-two taxed salt under a British monopoly.",
+  "frames": [
+   "S02_nithya_close",
+   "S01_nithya_medium"
+  ],
+  "seconds": 6,
+  "veo_prompt": "Shot: tight close-up framing identical to S02_nithya_close, Nithya shown from mid-chest up on the right side of frame, angled slightly toward the unseen guest on the left, with the soft-focus city river and bridge sunset visible through the large window behind her. Subject and image consistency: Nithya, the podcast host, in the same teal and gold sari and blouse, same hairstyle pulled back, earrings and natural makeup consistent with previous shots, seated at the same wooden NM podcast table with the NM-branded desk microphone on a short stand directly in front of her and the NM mug nearby, same studio wall panels and warm light strips, calm real podcast conversation recorded in a studio. Action: Nithya explains the point to Gandhi off-screen, lips clearly forming each word, expression intent and slightly serious yet conversational, making subtle hand gestures just within frame, small nods and natural blinks, maintaining steady eye-line toward him. Dialogue: \"The Salt Act of eighteen eighty-two taxed salt under a British monopoly.\" (Navura pronounced 'nah-VOO-rah'; Sabarmati pronounced 'SAH-bur-mah-tee'; Dandi pronounced 'DAHN-dee'; Gandhi pronounced 'GAHN-dee'; Nithya speaks in a warm, clear, curious Indian English female voice at a natural, explanatory pace.) Camera: static close-up, no zoom, pan, or tilt. Lighting and style: match S02_nithya_close with soft, warm studio key light, gentle fill, background sunset tones, sharp realistic detail and shallow depth of field keeping Nithya in focus. Audio: only Nithya\u2019s voice with quiet studio room tone, no other voices or sounds. Negatives: no camera movement, no overhead mic arms, no added text or graphics, no other people, no music, no exaggerated expressions, no scene changes or edits. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L4",
+  "who": "Gandhi",
+  "text": "I regard this tax to be the most iniquitous of all from the poor man's standpoint.",
+  "frames": [
+   "S04_gandhi_close",
+   "S03_gandhi_medium"
+  ],
+  "seconds": 8,
+  "veo_prompt": "Shot: tight close-up framing to match S04_gandhi_close, showing the elderly Mahatma Gandhi, AI-reimagined, from mid-chest up on the left or center-right side of frame (as in the still), facing slightly toward the unseen host with the wooden table edge and large window overlooking the river and bridge at sunset behind him. Subject and image consistency: the elderly Mahatma Gandhi, AI-reimagined, in the same simple off-white draped cloth, thin build, round glasses, gentle lined face, seated in the same studio chair, NM-branded desk microphone on a short stand placed on the table in front of him and NM mug visible nearby, same modern studio interior with dark acoustic panels and warm orange accent lights, calm real podcast conversation recorded in a studio. Action: Gandhi speaks thoughtfully toward Nithya off-screen, lips clearly articulating each word, expression earnest and compassionate, making minimal, slow hand movements near the table, slight nods, occasional soft blinks, remaining composed and serene. Dialogue: \"I regard this tax to be the most iniquitous of all from the poor man's standpoint.\" (Gandhi pronounced 'GAHN-dee'; his voice is that of a calm, gentle, elderly Indian man, soft and unhurried with a brief pause before he begins the sentence.) Camera: static, locked-off close-up shot without any movement. Lighting and style: match S04_gandhi_close with warm, soft, cinematic studio lighting shaping his features, subtle rim light from the window, sunset hues in the background, realistic textures and refined color grading. Audio: only Gandhi\u2019s voice and light studio room tone, no other audio. Negatives: no camera motion, no overhead boom mic, no extra props, no other people in frame, no text or subtitles, no music, no dramatic or abrupt gestures, no scene transitions or cuts. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L5",
+  "who": "Nithya",
+  "text": "After walking about two hundred forty miles to Dandi, you picked up natural salt.",
+  "frames": [
+   "S01_nithya_medium",
+   "S02_nithya_close"
+  ],
+  "seconds": 6,
+  "veo_prompt": "Shot: medium shot framing identical to S01_nithya_medium, showing Nithya seated on the left side of the wooden podcast table from waist up, with the empty guest chair on the right and the panoramic window revealing the river and bridge at sunset behind them. Subject and image consistency: Nithya, the podcast host, wearing the same teal and gold sari and blouse, same hairstyle tied back, same earrings and natural makeup, seated in the same office chair, NM-branded desk microphone on a short stand placed in front of her on the table and NM mug beside it, same acoustic panels and warm LED lighting in the studio, calm real podcast conversation recorded in a studio. Action: Nithya leans in slightly as she recounts the event to Gandhi off-screen to the right, speaking clearly with her lips syncing to each word, one hand lightly gesturing over the tabletop while the other rests near the mug, subtle nods and natural blinks, attentive and engaged. Dialogue: \"After walking about two hundred forty miles to Dandi, you picked up natural salt.\" (Navura pronounced 'nah-VOO-rah'; Sabarmati pronounced 'SAH-bur-mah-tee'; Dandi pronounced 'DAHN-dee'; Gandhi pronounced 'GAHN-dee'; Nithya uses a warm, clear, curious Indian English female voice at a natural storytelling pace.) Camera: static, locked-off medium shot with no pans or zooms. Lighting and style: match S01_nithya_medium with soft, warm, cinematic studio lighting on Nithya, gentle reflections on the table, vivid yet natural sunset tones through the window, realistic high-resolution detail. Audio: only Nithya\u2019s voice plus quiet neutral studio room tone, no other speakers or sound effects. Negatives: no camera movement, no overhead mic arms, no added text or graphics, no background music, no other people entering, no exaggerated or comedic gestures, no cuts or scene changes. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ }
+]
