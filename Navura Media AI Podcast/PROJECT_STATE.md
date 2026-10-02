@@ -39,9 +39,11 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 4. Gandhi voice clone: NOT TESTED. No GPU here, archive hosts blocked. OpenAI has no custom-voices endpoint on this key (404). Google instant custom voice needs the Text-to-Speech API enabled (not in the enabled list) and is allowlist-gated. Plan: open-weight cloning on a GPU job, or designed voice.
 5. Animation: PASS for the animation half. veo-3.1-lite-generate-001 image-to-video, 4 s, 720p, no audio, ~43 s, face and studio stable, natural gestures. Lip-sync half NOT TESTED (needs a GPU and a lip-sync model).
 
+6. Animated styles (Gemini flash-image, two-shot of Nithya and Gandhi in the studio): PASS in all three: flat 2D, 3D feature-film look, ink and watercolor. OpenAI refuses the stylized Gandhi too (HTTP 400), so animation does not get around OpenAI. Style choice pending user decision. Samples 6a, 6b, 6c.
+
 ## Open issues
 - Network: add commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org to Network access (403 from proxy now).
-- Enable texttospeech.googleapis.com if Google custom voice is to be tried.
+- Enable texttospeech.googleapis.com (optional: Chirp 3 HD voices; custom voice cloning needs the voice owner's consent and an allowlist, so not for Gandhi). Command: gcloud services enable texttospeech.googleapis.com --project=navuramedia-509306
 - GPU quota could not be read (service account lacks quota view). Check in console: Quotas, filter Cloud Run L4.
 
 ## Next
