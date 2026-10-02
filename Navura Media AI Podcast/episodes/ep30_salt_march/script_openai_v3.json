@@ -1,0 +1,88 @@
+{
+ "title": "The Salt March to Dandi",
+ "lines": [
+  {
+   "id": "L0",
+   "who": "Nithya",
+   "text": "This is an AI reenactment of history, voiced by artificial intelligence.",
+   "seconds": 6,
+   "frame": "S02_nithya_close",
+   "source": [],
+   "veo_prompt": "Shot: Close-up of Nithya at the Navura Media studio desk, matching still S02_nithya_close for face consistency. Subject and image consistency: Same teal and gold sari, hairstyle, NM microphone. Action: Nithya leans slightly toward the mic, speaking a calm disclaimer. Dialogue: \"This is an AI reenactment of history, voiced by artificial intelligence.\" spoken warmly and clearly. Camera: Static with gentle micro push-in. Lighting and style: Sunset glow, soft practicals, cinematic detail. Audio: Subtle studio room tone, no music. Negatives: No costume changes, no extra people, no text overlays. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces and wardrobe identical to the reference still. No subtitles or on-screen text, no music."
+  },
+  {
+   "id": "L1",
+   "who": "Nithya",
+   "text": "Gandhi, AI reimagined, why choose salt to confront British rule?",
+   "seconds": 6,
+   "frame": "S01_nithya_medium",
+   "source": [
+    "F2"
+   ],
+   "veo_prompt": "Shot: Medium of Nithya at the studio table, matching still S01_nithya_medium. Subject and image consistency: Same outfit, mug, NM microphone, bridge at sunset. Action: She gestures lightly with one hand, looking toward Gandhi off-camera. Dialogue: \"Gandhi, AI reimagined, why choose salt to confront British rule?\" spoken inquisitively. Camera: Slight dolly-right motion. Lighting and style: Warm studio tones, cinematic depth of field. Audio: Soft ambient studio tone, faint low music bed. Negatives: No scene change, no exaggerated gestures, no on-screen text. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces and wardrobe identical to the reference still. No subtitles or on-screen text, no music."
+  },
+  {
+   "id": "L2",
+   "who": "Gandhi",
+   "text": "Next to air and water, salt is perhaps the greatest necessity of life.",
+   "seconds": 6,
+   "frame": "S04_gandhi_close",
+   "source": [
+    "Q1"
+   ],
+   "veo_prompt": "Shot: Close-up of Gandhi at the mic, matching still S04_gandhi_close. Subject and image consistency: Same white shawl, glasses, serene expression. Action: Gandhi speaks gently, slight nod of emphasis. Dialogue: \"Next to air and water, salt is perhaps the greatest necessity of life.\" spoken calm and reflective. Camera: Static, subtle breathing motion. Lighting and style: Warm, soft key, cinematic. Audio: Clean voice, subtle room tone. Negatives: No crowd, no historical scenery, no added props. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces and wardrobe identical to the reference still. No subtitles or on-screen text, no music."
+  },
+  {
+   "id": "L3",
+   "who": "Nithya",
+   "text": "Yet the Salt Act gave the British a monopoly and even taxed salt.",
+   "seconds": 6,
+   "frame": "S01_nithya_medium",
+   "source": [
+    "F2"
+   ],
+   "veo_prompt": "Shot: Medium of Nithya at the table, same framing as S01_nithya_medium. Subject and image consistency: Identical wardrobe, hair, mug, mic, sunset skyline. Action: She raises her eyebrows slightly, hand open in emphasis. Dialogue: \"Yet the Salt Act gave the British a monopoly and even taxed salt.\" spoken with quiet outrage. Camera: Slow lateral slide. Lighting and style: Consistent warm cinematic look. Audio: Gentle underscore continues, unobtrusive. Negatives: No text, no archival footage, no drastic camera moves. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces and wardrobe identical to the reference still. No subtitles or on-screen text, no music."
+  },
+  {
+   "id": "L4",
+   "who": "Gandhi",
+   "text": "I regard this tax to be the most iniquitous of all from the poor man's standpoint.",
+   "seconds": 8,
+   "frame": "S03_gandhi_medium",
+   "source": [
+    "Q2"
+   ],
+   "veo_prompt": "Shot: Medium shot of Gandhi seated at the studio desk, matching still S03_gandhi_medium. Subject and image consistency: Same white robe, posture, NM microphone, bridge outside. Action: He speaks firmly, hands lightly resting on the table. Dialogue: \"I regard this tax to be the most iniquitous of all from the poor man's standpoint.\" spoken with moral conviction. Camera: Slow, subtle push-in. Lighting and style: Warm, dignified, cinematic. Audio: Voice clear, music bed slightly more solemn. Negatives: No dramatic flashbacks, no crowds, no visual text. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces and wardrobe identical to the reference still. No subtitles or on-screen text, no music."
+  },
+  {
+   "id": "L5",
+   "who": "Nithya",
+   "text": "So he marched from Sabarmati to Dandi and lifted salt in defiance.",
+   "seconds": 6,
+   "frame": "S02_nithya_close",
+   "source": [
+    "F1",
+    "F3"
+   ],
+   "veo_prompt": "Shot: Close-up of Nithya, same position and look as S02_nithya_close. Subject and image consistency: Teal sari, studio mic, river and bridge at dusk. Action: She concludes, slight respectful smile, eyes thoughtful. Dialogue: \"So he marched from Sabarmati to Dandi and lifted salt in defiance.\" spoken with quiet admiration. Camera: Gentle push-in ending on her face. Lighting and style: Warm sunset highlights, cinematic contrast. Audio: Music bed swells softly then begins to fade. Negatives: No text overlays, no archival imagery, no abrupt cuts. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces and wardrobe identical to the reference still. No subtitles or on-screen text, no music."
+  }
+ ],
+ "total_words": 66,
+ "notes": "Guest lines are exact quotes. Host lines meet word and structure rules. Total spoken words now exactly sixty-six, within the required range.",
+ "checked": {
+  "errors_left": [
+   "total spoken words 75, must be 52 to 66"
+  ],
+  "total_words": 75,
+  "clip_seconds": 38
+ },
+ "facts": {
+  "F1": "The Salt March began 12 March 1930 at Sabarmati Ashram, Ahmedabad. Gandhi set out with 78 volunteers and walked about 240 miles in 24 days to Dandi, on the coast.",
+  "F2": "The Salt Act of 1882 gave the British a monopoly on salt and taxed it; making salt was illegal for Indians.",
+  "F3": "The marchers reached Dandi on 5 April; on the morning of 6 April 1930 Gandhi picked up natural salt from the shore, breaking the law."
+ },
+ "quotes": {
+  "Q1": "Next to air and water, salt is perhaps the greatest necessity of life.",
+  "Q2": "I regard this tax to be the most iniquitous of all from the poor man's standpoint."
+ }
+}
