@@ -1,0 +1,503 @@
+{
+ "winner": "google:hook",
+ "title": "Gandhi's Salt March",
+ "lines": [
+  {
+   "id": "L0",
+   "who": "Nithya",
+   "text": "This is Navura, an AI-reimagined history conversation."
+  },
+  {
+   "id": "L1",
+   "who": "Nithya",
+   "text": "You set out from Sabarmati with seventy-eight volunteers. Why choose salt for this march?"
+  },
+  {
+   "id": "L2",
+   "who": "Gandhi",
+   "text": "Next to air and water, salt is perhaps the greatest necessity of life."
+  },
+  {
+   "id": "L3",
+   "who": "Nithya",
+   "text": "The Salt Act of eighteen eighty-two taxed salt under a British monopoly."
+  },
+  {
+   "id": "L4",
+   "who": "Gandhi",
+   "text": "I regard this tax to be the most iniquitous of all from the poor man's standpoint."
+  },
+  {
+   "id": "L5",
+   "who": "Nithya",
+   "text": "After walking about two hundred forty miles to Dandi, you picked up natural salt."
+  }
+ ],
+ "sources": {
+  "L1": [
+   "A1",
+   "A2"
+  ],
+  "L3": [
+   "A4"
+  ],
+  "L5": [
+   "A3",
+   "A6"
+  ]
+ },
+ "ranking": [
+  {
+   "tag": "google:hook",
+   "label": "C2",
+   "openai_judge": 9.14,
+   "google_judge": 8.57,
+   "mean": 8.46,
+   "cross_vendor_judge": 9.14,
+   "words": 76,
+   "notes": {
+    "openai": "Adds precise march details and British monopoly context, flows naturally into and out of the Gandhi quotes, and lands with a strong, clear closing while staying accurate and warm.",
+    "google": "C2 maintains a respectful and consistent second-person address while packing in precise, concrete historical details like the seventy-eight volunteers and the 240-mile trek."
+   }
+  },
+  {
+   "tag": "google:plain",
+   "label": "C4",
+   "openai_judge": 8.0,
+   "google_judge": 7.43,
+   "mean": 6.91,
+   "cross_vendor_judge": 8.0,
+   "words": 74,
+   "notes": {
+    "openai": "Very clear and warm with good conversational flow, but slightly less precise historically about the legal structure of the salt monopoly, so informative and fidelity are a bit lower.",
+    "google": "C4 is clear and consistent in POV, but contains awkward phrasing in line three ('made making it') and includes fewer vivid historical specifics."
+   }
+  },
+  {
+   "tag": "openai:arc",
+   "label": "C3",
+   "openai_judge": 7.29,
+   "google_judge": 8.14,
+   "mean": 6.91,
+   "cross_vendor_judge": 8.14,
+   "words": 77,
+   "notes": {
+    "openai": "Rich in context and nicely sets up the collision of need and law, but the host phrasing is somewhat clumsy and less conversational, weakening hook, flow, and clarity.",
+    "google": "C3 features a strong transition into the second quote and an evocative ending, but the opening question is grammatically clumsy and missing a question mark."
+   }
+  },
+  {
+   "tag": "google:arc",
+   "label": "C1",
+   "openai_judge": 8.14,
+   "google_judge": 7.14,
+   "mean": 6.84,
+   "cross_vendor_judge": 8.14,
+   "words": 73,
+   "notes": {
+    "openai": "Clean, factual, and respectful with a clear setup and payoff, though it omits helpful context like the march distance and number of volunteers and the opening line is a bit generic as a hook.",
+    "google": "C1 presents accurate facts, but abruptly switches from addressing Gandhi directly in the opening to referring to him in the third person in the closing line."
+   }
+  }
+ ],
+ "candidates": [
+  {
+   "tag": "openai:info",
+   "vendor": "openai",
+   "angle": "info",
+   "cand": {
+    "title": "Salt, Tax, and the March to Dandi",
+    "L0": "This is Navura, an AI-reimagined history conversation.",
+    "L1": "Gandhi, leaving Sabarmati Ashram in nineteen thirty, why choose salt against the Salt Act of eighteen eighty-two?",
+    "L3": "Under the Salt Act of eighteen eighty-two, with seventy-eight volunteers, you challenged this burden on poor Indians.",
+    "L5": "After about two hundred forty miles in twenty-four days, you reached Dandi and lifted forbidden shore salt in defiance.",
+    "sources": {
+     "L1": [
+      "A1",
+      "A4"
+     ],
+     "L3": [
+      "A2",
+      "A4",
+      "A7"
+     ],
+     "L5": [
+      "A3",
+      "A5",
+      "A6"
+     ]
+    }
+   },
+   "words": 89,
+   "rule_errors": [
+    "L1: 17 words, must be 12 to 14",
+    "L3: 17 words, must be 10 to 12",
+    "L5: 19 words, must be 10 to 15",
+    "total words 89, must be 64 to 78"
+   ],
+   "repairs": 5
+  },
+  {
+   "tag": "openai:hook",
+   "vendor": "openai",
+   "angle": "hook",
+   "cand": {
+    "title": "Salt, Law, and the Long Walk to Dandi",
+    "L0": "This is Navura, an AI-reimagined history conversation.",
+    "L1": "Beginning in nineteen thirty at Sabarmati with seventy-eight volunteers, why choose salt?",
+    "L3": "How did the Salt Act of eighteen eighty-two transform this necessity into protest?",
+    "L5": "After twenty-four days and two hundred forty miles, you reach Dandi and lift forbidden salt.",
+    "sources": {
+     "L1": [
+      "A1",
+      "A2"
+     ],
+     "L3": [
+      "A4"
+     ],
+     "L5": [
+      "A3",
+      "A6"
+     ]
+    }
+   },
+   "words": 76,
+   "rule_errors": [
+    "L3: 13 words, must be 10 to 12"
+   ],
+   "repairs": 5
+  },
+  {
+   "tag": "openai:plain",
+   "vendor": "openai",
+   "angle": "plain",
+   "cand": {
+    "title": "Salt and the First Steps to Dandi",
+    "L0": "This is Navura, an AI-reimagined history conversation.",
+    "L1": "Gandhi, as you left Sabarmati in nineteen thirty, why choose salt first?",
+    "L3": "So that belief led you to challenge the Salt Act of eighteen eighty-two.",
+    "L5": "After twenty-four days and two hundred forty miles, you finally reached Dandi and the salt.",
+    "sources": {
+     "L1": [
+      "A1"
+     ],
+     "L3": [
+      "A4",
+      "A7"
+     ],
+     "L5": [
+      "A3"
+     ]
+    }
+   },
+   "words": 76,
+   "rule_errors": [
+    "L3: 13 words, must be 10 to 12"
+   ],
+   "repairs": 5
+  },
+  {
+   "tag": "openai:arc",
+   "vendor": "openai",
+   "angle": "arc",
+   "cand": {
+    "title": "Salt, Law, and the March to Dandi",
+    "L0": "This is Navura, an AI-reimagined history conversation.",
+    "L1": "Gandhi, leaving Sabarmati with seventy-eight volunteers in nineteen thirty, why choose this simple salt.",
+    "L3": "So this basic need collides with the Salt Act of eighteen eighty-two.",
+    "L5": "After twenty-four days and two hundred forty miles, you reach Dandi and lift forbidden salt.",
+    "sources": {
+     "L1": [
+      "A1",
+      "A2"
+     ],
+     "L3": [
+      "A4"
+     ],
+     "L5": [
+      "A3",
+      "A6"
+     ]
+    }
+   },
+   "words": 77,
+   "repairs": 4,
+   "fact_check": {
+    "openai": {
+     "L1": {
+      "supported": false,
+      "issue": "The wording 'why choose this simple salt' implies a motive or reasoning for Gandhi's choice that is not stated in the allowed facts; the rest (leaving Sabarmati, 78 volunteers, year 1930) is supported."
+     },
+     "L3": {
+      "supported": true,
+      "issue": ""
+     },
+     "L5": {
+      "supported": false,
+      "issue": "It is supported that they walked about 240 miles in 24 days to Dandi and that Gandhi picked up natural salt there breaking the law, but the line adds that the salt was 'forbidden,' a characterization not explicitly present in the allowed facts."
+     }
+    },
+    "google": {
+     "L1": {
+      "supported": true,
+      "issue": null
+     },
+     "L3": {
+      "supported": true,
+      "issue": null
+     },
+     "L5": {
+      "supported": true,
+      "issue": null
+     }
+    }
+   },
+   "flags": {
+    "L1": [
+     [
+      "openai",
+      "The wording 'why choose this simple salt' implies a motive or reasoning for Gandhi's choice that is not stated in the allowed facts; the res"
+     ]
+    ],
+    "L5": [
+     [
+      "openai",
+      "It is supported that they walked about 240 miles in 24 days to Dandi and that Gandhi picked up natural salt there breaking the law, but the "
+     ]
+    ]
+   },
+   "n_flags": 2,
+   "facts_ok": true
+  },
+  {
+   "tag": "google:info",
+   "vendor": "google",
+   "angle": "info",
+   "error": "gemini gemini-3.8-flash 502 upstream request failed"
+  },
+  {
+   "tag": "google:hook",
+   "vendor": "google",
+   "angle": "hook",
+   "cand": {
+    "title": "Gandhi's Salt March",
+    "L0": "This is Navura, an AI-reimagined history conversation.",
+    "L1": "You set out from Sabarmati with seventy-eight volunteers. Why choose salt for this march?",
+    "L3": "The Salt Act of eighteen eighty-two taxed salt under a British monopoly.",
+    "L5": "After walking about two hundred forty miles to Dandi, you picked up natural salt.",
+    "sources": {
+     "L1": [
+      "A1",
+      "A2"
+     ],
+     "L3": [
+      "A4"
+     ],
+     "L5": [
+      "A3",
+      "A6"
+     ]
+    }
+   },
+   "words": 76,
+   "repairs": 0,
+   "fact_check": {
+    "openai": {
+     "L1": {
+      "supported": true,
+      "issue": ""
+     },
+     "L3": {
+      "supported": true,
+      "issue": ""
+     },
+     "L5": {
+      "supported": false,
+      "issue": "The line omits that Gandhi picked up natural salt on the shore at Dandi specifically on the morning of 6 April 1930 after reaching Dandi on 5 April, and instead implies it happened immediately upon arrival after the march. The exact timing (reaching Dandi on 5 April, breaking the law on 6 April) is specified in the allowed facts but altered here."
+     }
+    },
+    "google": {
+     "L1": {
+      "supported": true,
+      "issue": null
+     },
+     "L3": {
+      "supported": true,
+      "issue": null
+     },
+     "L5": {
+      "supported": true,
+      "issue": null
+     }
+    }
+   },
+   "flags": {
+    "L5": [
+     [
+      "openai",
+      "The line omits that Gandhi picked up natural salt on the shore at Dandi specifically on the morning of 6 April 1930 after reaching Dandi on "
+     ]
+    ]
+   },
+   "n_flags": 1,
+   "facts_ok": true
+  },
+  {
+   "tag": "google:plain",
+   "vendor": "google",
+   "angle": "plain",
+   "cand": {
+    "title": "Gandhi's Salt March",
+    "L0": "Welcome to Navura, an AI-reimagined history podcast.",
+    "L1": "Gandhi, when you left Sabarmati in nineteen thirty, why did you choose salt?",
+    "L3": "British law taxed salt and made making it illegal for Indians.",
+    "L5": "You reached Dandi and picked up natural salt on the shore, breaking the law.",
+    "sources": {
+     "L1": [
+      "A1"
+     ],
+     "L3": [
+      "A4",
+      "A5"
+     ],
+     "L5": [
+      "A6"
+     ]
+    }
+   },
+   "words": 74,
+   "repairs": 0,
+   "fact_check": {
+    "openai": {
+     "L1": {
+      "supported": false,
+      "issue": "The line adds an unsupported detail: that Gandhi 'left Sabarmati' specifically in 1930 in this context. While the Salt March began in 1930 at Sabarmati Ashram, the allowed facts do not explicitly state the phrasing 'when you left Sabarmati in nineteen thirty' as an event, so this is an added claim beyond the facts."
+     },
+     "L3": {
+      "supported": true,
+      "issue": ""
+     },
+     "L5": {
+      "supported": false,
+      "issue": "The line omits the specific date and place details given in the facts (Dandi on 6 April 1930) which is acceptable, but it presents the action without the date context. However, the claim that he 'reached Dandi and picked up natural salt on the shore, breaking the law' compresses two separate allowed facts (arrival on 5 April and picking up salt on 6 April) into a single undated event; this is treated here as an added/altered temporal claim not present in the facts."
+     }
+    },
+    "google": {
+     "L1": {
+      "supported": true,
+      "issue": null
+     },
+     "L3": {
+      "supported": true,
+      "issue": null
+     },
+     "L5": {
+      "supported": true,
+      "issue": null
+     }
+    }
+   },
+   "flags": {
+    "L1": [
+     [
+      "openai",
+      "The line adds an unsupported detail: that Gandhi 'left Sabarmati' specifically in 1930 in this context. While the Salt March began in 1930 a"
+     ]
+    ],
+    "L5": [
+     [
+      "openai",
+      "The line omits the specific date and place details given in the facts (Dandi on 6 April 1930) which is acceptable, but it presents the actio"
+     ]
+    ]
+   },
+   "n_flags": 2,
+   "facts_ok": true
+  },
+  {
+   "tag": "google:arc",
+   "vendor": "google",
+   "angle": "arc",
+   "cand": {
+    "title": "Defying the Salt Tax",
+    "L0": "This is Navura, an AI-reimagined history conversation.",
+    "L1": "When you left Sabarmati Ashram in nineteen thirty, why did you choose salt?",
+    "L3": "The Salt Act of eighteen eighty-two taxed salt under British monopoly.",
+    "L5": "Reaching Dandi, Gandhi picked up natural salt on the shore, breaking the law.",
+    "sources": {
+     "L1": [
+      "A1"
+     ],
+     "L3": [
+      "A4"
+     ],
+     "L5": [
+      "A3",
+      "A6"
+     ]
+    }
+   },
+   "words": 73,
+   "repairs": 0,
+   "fact_check": {
+    "openai": {
+     "L1": {
+      "supported": false,
+      "issue": "The line adds an unsupported detail by stating 'when you left Sabarmati Ashram in nineteen thirty' without the specific, supported start date of 12 March 1930; 'in nineteen thirty' as the time of leaving is not explicitly given in the allowed facts, which only state the march began on that date at Sabarmati Ashram."
+     },
+     "L3": {
+      "supported": true,
+      "issue": ""
+     },
+     "L5": {
+      "supported": false,
+      "issue": "The line omits the specific date; allowed facts state Gandhi picked up natural salt on the shore on the morning of 6 April 1930, whereas the line implies it occurred upon reaching Dandi, which contradicts the timeline that they reached Dandi on 5 April and broke the law the following morning."
+     }
+    },
+    "google": {
+     "L1": {
+      "supported": true,
+      "issue": null
+     },
+     "L3": {
+      "supported": true,
+      "issue": null
+     },
+     "L5": {
+      "supported": true,
+      "issue": null
+     }
+    }
+   },
+   "flags": {
+    "L1": [
+     [
+      "openai",
+      "The line adds an unsupported detail by stating 'when you left Sabarmati Ashram in nineteen thirty' without the specific, supported start dat"
+     ]
+    ],
+    "L5": [
+     [
+      "openai",
+      "The line omits the specific date; allowed facts state Gandhi picked up natural salt on the shore on the morning of 6 April 1930, whereas the"
+     ]
+    ]
+   },
+   "n_flags": 2,
+   "facts_ok": true
+  }
+ ],
+ "facts": {
+  "A1": "The Salt March began on 12 March 1930 at Sabarmati Ashram, near Ahmedabad.",
+  "A2": "Gandhi set out with 78 volunteers.",
+  "A3": "They walked about 240 miles in 24 days to Dandi, on the coast.",
+  "A4": "The Salt Act of 1882 gave the British a monopoly over salt and taxed it.",
+  "A5": "Making salt was illegal for Indians.",
+  "A6": "They reached Dandi on 5 April. On the morning of 6 April 1930 Gandhi picked up natural salt on the shore, breaking the law.",
+  "A7": "Gandhi wrote to the Viceroy, Lord Irwin, on 2 March 1930, calling the salt tax the most iniquitous of all from the poor man's standpoint."
+ },
+ "quotes": {
+  "Q1": "Next to air and water, salt is perhaps the greatest necessity of life.",
+  "Q2": "I regard this tax to be the most iniquitous of all from the poor man's standpoint."
+ }
+}
