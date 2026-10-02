@@ -45,6 +45,8 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 
 8. User chose 7b (realistic render), asked for clearer and neater. Result: 8_two_shot_clean_2K.png (gemini-3.1-flash-image, global, imageSize 2K gives 2752x1536). Method: pass 7b as the look reference plus studio and Nithya refs with a "sharper, neater, fix mic arms" prompt, then a second targeted edit to remove window light streaks. Gemini 3 pro-image ignored the 2K size (1376x768) and rebuilt the studio layout, so flash-image is the better base. This look is close to photoreal: AI disclosure is essential. Style status: locked to this look unless the user objects.
 
+9. Gandhi shot set DONE (assets/gandhi_kit, 10 shots, 2752x1536 JPEG) plus hero shot 8. Generator and QA in tools/shot_kit (kit.py, common.py). Look guide in assets/look_guide.json. Nithya wardrobe available: teal saree (w1, w2), rust salwar (w3, w4), maroon saree (w5), maroon embroidered kurta (w7), grey blazer (w8, w9). Image quota: 429 when 4 parallel; use 2 with backoff. All 10 pass auto QA; S03 needed a tighter-framing prompt.
+
 ## Open issues
 - Network: add commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org to Network access (403 from proxy now).
 - Enable texttospeech.googleapis.com (optional: Chirp 3 HD voices; custom voice cloning needs the voice owner's consent and an allowlist, so not for Gandhi). Command: gcloud services enable texttospeech.googleapis.com --project=navuramedia-509306

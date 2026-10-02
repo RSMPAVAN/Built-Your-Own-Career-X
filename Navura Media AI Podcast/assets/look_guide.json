@@ -1,0 +1,30 @@
+{
+ "name": "Navura Media look guide",
+ "version": 1,
+ "style": "Realistic cinematic render, natural proportions, realistic skin, normal-sized eyes, crisp clean and neat. Not cartoon, not anime. Slightly polished, not fully photographic; AI disclosure always shown.",
+ "studio": "Navura Media podcast studio: polished walnut table, two NM-logo microphones on boom arms, two NM mugs, large window with sunset and a cable-stayed bridge over a river, dark acoustic panels with amber and teal accent lighting.",
+ "host": {
+  "name": "Nithya",
+  "wardrobe_gandhi_episode": "teal and gold saree (reference w1.png, face reference w7.png)"
+ },
+ "image_model": "gemini-3.1-flash-image (location global, imageSize 2K, aspect 16:9). OpenAI image models refuse real-person subjects, so guests use Gemini only.",
+ "prompt_rules": "Realistic cinematic render look, same as image 1: natural proportions, realistic skin, normal-sized eyes, crisp, clean and neat, warm sunset window light with teal and amber accent lighting,  shallow depth of field on close shots. No text overlays, no watermark, no stray light streaks or reflections on the glass, microphones always attached to their boom arms.",
+ "shots": [
+  "S01_nithya_medium",
+  "S02_nithya_close",
+  "S03_gandhi_medium",
+  "S04_gandhi_close",
+  "S05_ots_to_gandhi",
+  "S06_ots_to_nithya",
+  "S07_insert_mug",
+  "S08_insert_mic",
+  "S09_cutaway_window",
+  "S10_empty_wide"
+ ],
+ "hero_anchor": "tests/2026-10-02/8_two_shot_clean_2K.png",
+ "qa": "Gemini vision check per shot: face match >=4/5, style >=4/5, mic attached, no text or watermark, no artifacts, follows brief. One retry with feedback.",
+ "notes": [
+  "Image generation quota is low on a new project: run 2 shots at a time with backoff on HTTP 429.",
+  "Replace the guest by swapping the guest reference crop and the guest description in the prompts."
+ ]
+}
