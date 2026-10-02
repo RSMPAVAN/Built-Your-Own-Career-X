@@ -1,0 +1,149 @@
+{
+ "S01_nithya_medium": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "qa": {
+    "nithya_match": 4,
+    "gandhi_match": null,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Excellent match to the style anchor and brief. Nithya is correctly framed alone, gesturing mid-conversation with the sunset background."
+   }
+  }
+ ],
+ "S02_nithya_close": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": 5,
+    "gandhi_match": null,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Excellent close-up shot of Nithya that perfectly matches the style anchor and follows all brief requirements."
+   }
+  }
+ ],
+ "S03_gandhi_medium": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": 5,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": false,
+    "notes": "The image is a wide shot showing the entire table and an empty chair, failing the brief's requirement for a medium shot of Gandhi."
+   }
+  },
+  {
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  }
+ ],
+ "S04_gandhi_close": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": 5,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": true,
+    "follows_brief": false,
+    "notes": "There is a prominent ghosting/smudge rendering artifact on Gandhi's chest and shoulder area."
+   }
+  }
+ ],
+ "S05_ots_to_gandhi": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  }
+ ],
+ "S06_ots_to_nithya": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  }
+ ],
+ "S07_insert_mug": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  }
+ ],
+ "S08_insert_mic": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  }
+ ],
+ "S09_cutaway_window": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  }
+ ],
+ "S10_empty_wide": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  }
+ ]
+}

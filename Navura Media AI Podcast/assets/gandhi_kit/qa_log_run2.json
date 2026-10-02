@@ -1,0 +1,127 @@
+{
+ "S03_gandhi_medium": [
+  {
+   "attempt": 0,
+   "error": "{\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"Resource has been exhausted (e.g. check quota).\",\n    \"status\": \"RESOURCE_EXHAUSTED\"\n  }\n}\n",
+   "qa": {}
+  },
+  {
+   "attempt": 1,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": 3,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": false,
+    "notes": "Gandhi is missing his signature glasses. Additionally, the framing is a wide shot showing the entire empty left side of the table rather than a medium shot focusing only on Gandhi."
+   }
+  }
+ ],
+ "S04_gandhi_close": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": 5,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Excellent match to style and Gandhi's likeness. The NM logo is missing from the microphone, but the shot composition perfectly follows the brief."
+   }
+  }
+ ],
+ "S05_ots_to_gandhi": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": 4,
+    "gandhi_match": 5,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Excellent over-the-shoulder shot that perfectly matches the style anchor and follows the brief."
+   }
+  }
+ ],
+ "S06_ots_to_nithya": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": 5,
+    "gandhi_match": 5,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Excellent over-the-shoulder shot that perfectly matches the brief and maintains style consistency."
+   }
+  }
+ ],
+ "S07_insert_mug": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": null,
+    "style_match": 5,
+    "mic_attached": null,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Perfect match to the style anchor and brief. Excellent shallow depth of field and accurate NM logo on the mug."
+   }
+  }
+ ],
+ "S08_insert_mic": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": null,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Perfect match to the style anchor and follows the brief exactly."
+   }
+  }
+ ],
+ "S09_cutaway_window": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": null,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Perfect match to the style anchor and follows the brief exactly."
+   }
+  }
+ ],
+ "S10_empty_wide": [
+  {
+   "attempt": 0,
+   "qa": {
+    "nithya_match": null,
+    "gandhi_match": null,
+    "style_match": 5,
+    "mic_attached": true,
+    "stray_text_or_watermark": false,
+    "hands_or_face_artifacts": false,
+    "follows_brief": true,
+    "notes": "Perfect match to the brief. Empty studio with correct composition, empty chairs, mugs, and microphones."
+   }
+  }
+ ]
+}
