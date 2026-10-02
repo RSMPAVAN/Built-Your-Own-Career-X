@@ -41,6 +41,8 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 
 6. Animated styles (Gemini flash-image, two-shot of Nithya and Gandhi in the studio): PASS in all three: flat 2D, 3D feature-film look, ink and watercolor. OpenAI refuses the stylized Gandhi too (HTTP 400), so animation does not get around OpenAI. Style choice pending user decision. Samples 6a, 6b, 6c.
 
+7. User liked 6b (3D) but found it too anime; wants simpler and more realistic. Tried semi-realistic variants (7a painting, 7b realistic render, 7c simple clean). 7a and 7b are good; 7c reads more illustrated. Leaning 7a. Style choice pending user decision.
+
 ## Open issues
 - Network: add commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org to Network access (403 from proxy now).
 - Enable texttospeech.googleapis.com (optional: Chirp 3 HD voices; custom voice cloning needs the voice owner's consent and an allowlist, so not for Gandhi). Command: gcloud services enable texttospeech.googleapis.com --project=navuramedia-509306
