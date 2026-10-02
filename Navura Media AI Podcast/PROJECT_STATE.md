@@ -32,7 +32,19 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 - OpenAI credential works (133 models): gpt-5.1, gpt-5, gpt-image-2, gpt-image-1.5, gpt-4o-transcribe, gpt-4o-mini-tts, sora-2, sora-2-pro.
 - Not yet verified: GPU quota (L4), real-person image/video policy, voice clone tools.
 
+## Quick test results (2 Oct 2026; outputs in tests/2026-10-02/)
+1. Multi-angle still from studio + Nithya refs: PASS on both. Gemini (gemini-3.1-flash-image, location global only) keeps the studio layout. OpenAI gpt-image-2 edit (quality low, 1536x1024, 13 s) gives a more cinematic frame. Face and saree held in both.
+2. Gandhi still (text prompt only, no reference photo): Gemini flash-image and pro-image both generate it. OpenAI gpt-image-2 REJECTS it (safety system, HTTP 400). Use Gemini for Gandhi. Reference-photo version untested (Wikimedia hosts blocked by network policy in that session).
+3. Two-speaker voice: PASS. gemini-2.5-flash-tts, 2.5-pro-tts, 3.1-flash-tts-preview (global) work with two named speakers. gemini-3.8-flash-tts reads the style instruction aloud, so it needs a different prompt format. OpenAI gpt-4o-transcribe-diarize matched the script and split the two speakers, so the transcript QA step works. Voice quality (does Gandhi sound right) needs a human listen.
+4. Gandhi voice clone: NOT TESTED. No GPU here, archive hosts blocked. OpenAI has no custom-voices endpoint on this key (404). Google instant custom voice needs the Text-to-Speech API enabled (not in the enabled list) and is allowlist-gated. Plan: open-weight cloning on a GPU job, or designed voice.
+5. Animation: PASS for the animation half. veo-3.1-lite-generate-001 image-to-video, 4 s, 720p, no audio, ~43 s, face and studio stable, natural gestures. Lip-sync half NOT TESTED (needs a GPU and a lip-sync model).
+
+## Open issues
+- Network: add commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org to Network access (403 from proxy now).
+- Enable texttospeech.googleapis.com if Google custom voice is to be tried.
+- GPU quota could not be read (service account lacks quota view). Check in console: Quotas, filter Cloud Run L4.
+
 ## Next
-1. Run the five quick tests: multi-angle still, Gandhi still from public-domain photos, two-speaker voice clip, Gandhi voice clone, 10-second lip-sync clip. Report each result.
-2. Check reference-photo network hosts (wikimedia, gandhiheritageportal).
+1. Lip-sync and voice-clone spike on a GPU (needs GPU quota).
+2. Gandhi reference-photo test once hosts are allowed.
 3. Build pipeline v0 for Gandhi.
