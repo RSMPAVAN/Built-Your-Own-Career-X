@@ -52,7 +52,7 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 ## Open issues
 - Network: add commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org to Network access (403 from proxy now).
 - Enable texttospeech.googleapis.com (optional: Chirp 3 HD voices; custom voice cloning needs the voice owner's consent and an allowlist, so not for Gandhi). Command: gcloud services enable texttospeech.googleapis.com --project=navuramedia-509306
-- GPU quota could not be read (service account lacks quota view). Check in console: Quotas, filter Cloud Run L4.
+- GPU quota: PROBED 2 Oct 2026. Creating a Cloud Run L4 service fails in us-central1 with and without zonal redundancy: "You do not have quota for using GPUs". Compute Engine API is also not enabled. User must request quota (g.co/cloudrun/gpu-quota): Quotas page, filter Cloud Run Admin API L4, us-central1, request 1. Account may also need to be upgraded from free trial. Until then no GPU lip-sync.
 
 ## Next
 1. Lip-sync and voice-clone spike on a GPU (needs GPU quota).
