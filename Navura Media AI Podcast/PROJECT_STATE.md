@@ -18,12 +18,15 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 - Org policy iam.disableServiceAccountKeyCreation was switched off for this project so a key could be created.
 - Delete the key once the app runs on Cloud Run (keyless).
 
-## Secrets (environment variables, never in git or chat)
-- GOOGLE_SERVICE_ACCOUNT_JSON
-- OPENAI_API_KEY
-- Added to the environment settings on 2 Oct 2026. Loads in new sessions only.
+## Credentials (API credentials in environment settings; never in git or chat)
+- The environment uses the API credentials system. Keys are injected into requests to allowed hosts and are NOT visible as environment variables in the sandbox. Do not check env vars; test with direct HTTPS calls.
+- Google Vertex: type "GCP access token (with Service Account...)", allowed website *.googleapis.com, scope https://www.googleapis.com/auth/cloud-platform.
+- OpenAI: type Bearer, allowed website api.openai.com, header Authorization.
+- Still allow in Network access: commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org.
+- SDKs that insist on local credentials need a placeholder key or plain REST calls.
+- Loads in new sessions only.
 
 ## Next
-1. In a new session, confirm both variables exist and the network allows googleapis.com and api.openai.com.
+1. In a new session, test one small REST call to Vertex (list models in navuramedia-509306, us-central1) and one to OpenAI (list models) to confirm both credentials work.
 2. Run the five quick tests: multi-angle still, Gandhi still from public-domain photos, two-speaker voice clip, Gandhi voice clone, 10-second lip-sync clip. Report each result.
 3. Build pipeline v0 for Gandhi.
