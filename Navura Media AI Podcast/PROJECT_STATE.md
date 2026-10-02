@@ -26,7 +26,13 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 - SDKs that insist on local credentials need a placeholder key or plain REST calls.
 - Loads in new sessions only.
 
+## Verified 2 Oct 2026 (new session)
+- Google credential works: authenticated calls to project navuramedia-509306 succeed. APIs enabled: Vertex AI, Cloud Run, Cloud Build, Artifact Registry, Firestore, Storage, Secret Manager, Scheduler, Tasks.
+- Vertex models seen: gemini-3.8-flash, gemini-3.7-flash, gemini-3.1-pro-preview, gemini-3.1-flash-image, gemini-3-pro-image, gemini-2.5-flash-tts, gemini-2.5-pro-tts. Veo in catalog: veo-3.1-generate-001, veo-3.1-fast-generate-001, veo-3.1-lite-generate-001, veo-3.0 and veo-2.0 variants. (Catalog presence, not yet a test generation.)
+- OpenAI credential works (133 models): gpt-5.1, gpt-5, gpt-image-2, gpt-image-1.5, gpt-4o-transcribe, gpt-4o-mini-tts, sora-2, sora-2-pro.
+- Not yet verified: GPU quota (L4), real-person image/video policy, voice clone tools.
+
 ## Next
-1. In a new session, test one small REST call to Vertex (list models in navuramedia-509306, us-central1) and one to OpenAI (list models) to confirm both credentials work.
-2. Run the five quick tests: multi-angle still, Gandhi still from public-domain photos, two-speaker voice clip, Gandhi voice clone, 10-second lip-sync clip. Report each result.
+1. Run the five quick tests: multi-angle still, Gandhi still from public-domain photos, two-speaker voice clip, Gandhi voice clone, 10-second lip-sync clip. Report each result.
+2. Check reference-photo network hosts (wikimedia, gandhiheritageportal).
 3. Build pipeline v0 for Gandhi.
