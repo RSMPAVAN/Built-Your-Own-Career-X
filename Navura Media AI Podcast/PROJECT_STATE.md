@@ -47,6 +47,8 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 
 9. Gandhi shot set DONE (assets/gandhi_kit, 10 shots, 2752x1536 JPEG) plus hero shot 8. Generator and QA in tools/shot_kit (kit.py, common.py). Look guide in assets/look_guide.json. Nithya wardrobe available: teal saree (w1, w2), rust salwar (w3, w4), maroon saree (w5), maroon embroidered kurta (w7), grey blazer (w8, w9). Image quota: 429 when 4 parallel; use 2 with backoff. All 10 pass auto QA; S03 needed a tighter-framing prompt.
 
+10. 10-second pilot DONE (episodes/pilot_10s/pilot_10s.mp4). Nithya 4 s on veo-3.1-fast, Gandhi 6 s on veo-3.1-generate (Standard), both with native speech from the dialogue in the prompt, joined and loudness-normalized with a burned-in AI tag. Transcripts match the script exactly. Veo Fast blocked the Gandhi clip (filter), Standard allowed it, Lite had a load error. Veo native speech costs about $0.40 per second on Standard, so a 2-minute episode this way is about $40 to $50: the cost plan still needs the Lite plus lip-sync route. Gandhi quote primary source still to confirm.
+
 ## Open issues
 - Network: add commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org to Network access (403 from proxy now).
 - Enable texttospeech.googleapis.com (optional: Chirp 3 HD voices; custom voice cloning needs the voice owner's consent and an allowlist, so not for Gandhi). Command: gcloud services enable texttospeech.googleapis.com --project=navuramedia-509306
