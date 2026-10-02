@@ -43,6 +43,8 @@ Plan page (live, private): https://claude.ai/artifact/VnPHq43DYUs1hDyjZNksdv
 
 7. User liked 6b (3D) but found it too anime; wants simpler and more realistic. Tried semi-realistic variants (7a painting, 7b realistic render, 7c simple clean). 7a and 7b are good; 7c reads more illustrated. Leaning 7a. Style choice pending user decision.
 
+8. User chose 7b (realistic render), asked for clearer and neater. Result: 8_two_shot_clean_2K.png (gemini-3.1-flash-image, global, imageSize 2K gives 2752x1536). Method: pass 7b as the look reference plus studio and Nithya refs with a "sharper, neater, fix mic arms" prompt, then a second targeted edit to remove window light streaks. Gemini 3 pro-image ignored the 2K size (1376x768) and rebuilt the studio layout, so flash-image is the better base. This look is close to photoreal: AI disclosure is essential. Style status: locked to this look unless the user objects.
+
 ## Open issues
 - Network: add commons.wikimedia.org, upload.wikimedia.org, gandhiheritageportal.org, mkgandhi.org to Network access (403 from proxy now).
 - Enable texttospeech.googleapis.com (optional: Chirp 3 HD voices; custom voice cloning needs the voice owner's consent and an allowlist, so not for Gandhi). Command: gcloud services enable texttospeech.googleapis.com --project=navuramedia-509306
