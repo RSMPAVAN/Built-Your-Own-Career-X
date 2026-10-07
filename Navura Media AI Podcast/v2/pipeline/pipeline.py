@@ -12,6 +12,10 @@ def ledger_add(item,usd):
     L=json.load(open(LEDGER)) if os.path.exists(LEDGER) else []
     L.append({"item":item,"est_usd":usd,"t":time.strftime("%Y-%m-%d %H:%M:%S")}); json.dump(L,open(LEDGER,"w"),indent=1)
     return sum(x["est_usd"] for x in L)
+def ledger_total():
+    return sum(x["est_usd"] for x in json.load(open(LEDGER))) if os.path.exists(LEDGER) else 0.0
+def guard(item,usd):
+    if ledger_total()+usd>CFG["budget_guard_usd"]: raise SystemExit(f"budget guard: {item} would take estimated spend to {ledger_total()+usd:.2f} > {CFG['budget_guard_usd']}")
 def key(*parts): return hashlib.sha256("|".join(map(str,parts)).encode()).hexdigest()[:16]
 def frame_data_uri(still):
     im=Image.open(f"{V2}/assets/kit/{still}.jpg").convert("RGB"); w,h=im.size; nh=int(w*9/16); top=(h-nh)//2
@@ -59,9 +63,9 @@ def verify_audio(path,text):
 def base_clip(character,seconds=6):
     c=CFG["characters"][character]; k=key(character,c["still"],c["base_prompt"],seconds); f=f"{CACHE}/base_{character}_{k}.json"
     if os.path.exists(f): return json.load(open(f))["url"]
-    total=ledger_add(f"base clip {character} {seconds}s",CFG["price_estimates_usd"]["seedance_base_6s"])
-    if total>CFG["budget_guard_usd"]: raise SystemExit(f"budget guard: estimated spend {total:.2f} > {CFG['budget_guard_usd']}")
+    guard(f"base clip {character}",CFG["price_estimates_usd"]["seedance_base_6s"])
     out=fal(CFG["fal_models"]["base_clip"],{"prompt":c["base_prompt"],"image_url":frame_data_uri(c["still"]),"duration":str(seconds),"resolution":"720p","aspect_ratio":"16:9","generate_audio":False})
+    ledger_add(f"base clip {character} {seconds}s",CFG["price_estimates_usd"]["seedance_base_6s"])
     json.dump({"url":out["video"]["url"]},open(f,"w")); return out["video"]["url"]
 # ---- stage 3: lip-sync one line ----
 def silence_data_uri(sec=0.3):
@@ -72,23 +76,23 @@ def audio_to_url(audio_path):
     """The lip-sync service wants a hosted link; fal's merge tool hosts the file (voice line plus 0.3 s of silence)."""
     f=f"{CACHE}/aurl_{key(audio_path,os.path.getsize(audio_path))}.json"
     if os.path.exists(f): return json.load(open(f))["url"]
-    ledger_add("host audio",0.01)
+    guard("host audio",0.01)
     aud="data:audio/wav;base64,"+base64.b64encode(open(audio_path,"rb").read()).decode()
     out=fal("fal-ai/ffmpeg-api/merge-audios",{"audio_urls":[aud,silence_data_uri()]},expect="audio")
-    url=out["audio"]["url"]; json.dump({"url":url},open(f,"w")); return url
+    ledger_add("host audio",0.01); url=out["audio"]["url"]; json.dump({"url":url},open(f,"w")); return url
 def lipsync(character,text,base_url,audio_path):
     k=key(character,text,base_url,audio_path); f=f"{CACHE}/line_{k}.json"
     if os.path.exists(f): return json.load(open(f))["url"]
-    total=ledger_add(f"lipsync {character}: {text[:30]}",CFG["price_estimates_usd"]["lipsync_pro_per_line"])
-    if total>CFG["budget_guard_usd"]: raise SystemExit(f"budget guard: estimated spend {total:.2f} > {CFG['budget_guard_usd']}")
+    guard(f"lipsync {character}",CFG["price_estimates_usd"]["lipsync_pro_per_line"])
     aud=audio_to_url(audio_path)
     out=fal(CFG["fal_models"]["lipsync"],{"video_url":base_url,"audio_url":aud,"model":"lipsync-2-pro","sync_mode":"bounce"})
+    ledger_add(f"lipsync {character}: {text[:30]}",CFG["price_estimates_usd"]["lipsync_pro_per_line"])
     json.dump({"url":out["video"]["url"]},open(f,"w")); return out["video"]["url"]
 # ---- stage 4: assemble the conversation into one video (runs on fal so it also works where files cannot be downloaded) ----
 def assemble(results,name="conversation"):
-    ledger_add("merge videos",0.02)
+    guard("merge videos",0.02)
     out=fal("fal-ai/ffmpeg-api/merge-videos",{"video_urls":[r["video"] for r in results]})
-    return out["video"]["url"]
+    ledger_add("merge videos",0.02); return out["video"]["url"]
 def run_line(character,text):
     audio=tts(character,text); sc,heard=verify_audio(audio,text)
     if sc<0.95: raise RuntimeError(f"voice check failed ({sc}): heard '{heard}'")

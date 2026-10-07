@@ -1,0 +1,21 @@
+{
+ "lines": [
+  {
+   "character": "nithya",
+   "text": "Why choose salt for this march?",
+   "voice_check": 1.0,
+   "audio": "/home/user/Built-Your-Own-Career-X/Navura Media AI Podcast/v2/pipeline/cache/tts_5bf9f2f92f79ccef.wav",
+   "base_clip": "https://v3b.fal.media/files/b/0aad72d7/_tPOlTl175RAmpIq9KkFu_video.mp4",
+   "video": "https://v3b.fal.media/files/b/0aad72fe/PnmEyBMlRbHR89pK4cP7V_Q1bgz5iP.mp4"
+  },
+  {
+   "character": "gandhi",
+   "text": "Next to air and water, salt is perhaps the greatest necessity of life.",
+   "voice_check": 1.0,
+   "audio": "/home/user/Built-Your-Own-Career-X/Navura Media AI Podcast/v2/pipeline/cache/tts_dc45fa8913b08e15.wav",
+   "base_clip": "https://v3b.fal.media/files/b/0aad72d8/K3tCKF6gXdu-gHCN_9WPS_video.mp4",
+   "video": "https://v3b.fal.media/files/b/0aad730a/y-sk6TupO5VhKXMatYfGZ_RLsmeMYm.mp4"
+  }
+ ],
+ "final": "https://v3b.fal.media/files/b/0aad730c/HdwkHsAmCDg9cglouFbSS_merged_video.mp4"
+}
