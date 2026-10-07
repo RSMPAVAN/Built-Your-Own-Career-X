@@ -1,0 +1,20 @@
+{
+  "fal_models": {
+    "base_clip": "fal-ai/bytedance/seedance/v1.5/pro/image-to-video",
+    "lipsync": "fal-ai/sync-lipsync/v2"
+  },
+  "price_estimates_usd": {"seedance_base_6s": 0.5, "lipsync_pro_per_line": 0.5, "tts_per_line": 0.01},
+  "budget_guard_usd": 2.5,
+  "characters": {
+    "nithya": {
+      "still": "S02_nithya_close",
+      "voice": {"engine": "gemini", "name": "Sulafat", "style": "Say this warmly and clearly, like a curious podcast host, at a natural conversational pace: "},
+      "base_prompt": "Close-up of a woman podcast host seated at a table with a desk microphone in a studio at sunset, listening and speaking warmly to someone off-screen, natural gentle head movement, blinking, subtle expressions, mouth moving softly as in relaxed conversation. Static camera."
+    },
+    "gandhi": {
+      "still": "S04_gandhi_close",
+      "voice": {"engine": "openai", "name": "ash", "style": "Speak as a frail, warm, gentle elderly Indian man in his sixties: soft, slightly husky, slow and thoughtful, with a mild Indian English accent, small natural pauses."},
+      "base_prompt": "Close-up of a calm elderly man with round glasses seated at a podcast table with a desk microphone in a studio at sunset, speaking gently to someone off-screen, natural slow head movement, blinking, soft smile, mouth moving softly as in relaxed conversation. Static camera."
+    }
+  }
+}
