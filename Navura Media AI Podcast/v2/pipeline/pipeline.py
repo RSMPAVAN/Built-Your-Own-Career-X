@@ -17,7 +17,7 @@ def frame_data_uri(still):
     im=Image.open(f"{V2}/assets/kit/{still}.jpg").convert("RGB"); w,h=im.size; nh=int(w*9/16); top=(h-nh)//2
     im=im.crop((0,top,w,top+nh)).resize((1280,720)); b=io.BytesIO(); im.save(b,"JPEG",quality=90)
     return "data:image/jpeg;base64,"+base64.b64encode(b.getvalue()).decode()
-def fal(endpoint,body,timeout=1500,tries=3):
+def fal(endpoint,body,timeout=1500,tries=3,expect='video'):
     last=None
     for attempt in range(tries):
         try:
@@ -28,7 +28,7 @@ def fal(endpoint,body,timeout=1500,tries=3):
                 time.sleep(8); s=requests.get(j["status_url"],timeout=60).json()
                 if s.get("status") in ("COMPLETED","FAILED","ERROR"): break
             res=requests.get(j["response_url"],timeout=120); out=res.json()
-            if res.status_code!=200 or "video" not in out: raise RuntimeError(f"{endpoint} failed {res.status_code} {str(out)[:300]}")
+            if res.status_code!=200 or expect not in out: raise RuntimeError(f"{endpoint} failed {res.status_code} {str(out)[:300]}")
             return out
         except RuntimeError as e:
             last=e
@@ -64,12 +64,24 @@ def base_clip(character,seconds=6):
     out=fal(CFG["fal_models"]["base_clip"],{"prompt":c["base_prompt"],"image_url":frame_data_uri(c["still"]),"duration":str(seconds),"resolution":"720p","aspect_ratio":"16:9","generate_audio":False})
     json.dump({"url":out["video"]["url"]},open(f,"w")); return out["video"]["url"]
 # ---- stage 3: lip-sync one line ----
+def silence_data_uri(sec=0.3):
+    f=f"{CACHE}/silence.wav"
+    if not os.path.exists(f): subprocess.run(["ffmpeg","-y","-loglevel","error","-f","lavfi","-i","anullsrc=r=24000:cl=mono","-t",str(sec),f],check=True)
+    return "data:audio/wav;base64,"+base64.b64encode(open(f,"rb").read()).decode()
+def audio_to_url(audio_path):
+    """The lip-sync service wants a hosted link; fal's merge tool hosts the file (voice line plus 0.3 s of silence)."""
+    f=f"{CACHE}/aurl_{key(audio_path,os.path.getsize(audio_path))}.json"
+    if os.path.exists(f): return json.load(open(f))["url"]
+    ledger_add("host audio",0.01)
+    aud="data:audio/wav;base64,"+base64.b64encode(open(audio_path,"rb").read()).decode()
+    out=fal("fal-ai/ffmpeg-api/merge-audios",{"audio_urls":[aud,silence_data_uri()]},expect="audio")
+    url=out["audio"]["url"]; json.dump({"url":url},open(f,"w")); return url
 def lipsync(character,text,base_url,audio_path):
     k=key(character,text,base_url,audio_path); f=f"{CACHE}/line_{k}.json"
     if os.path.exists(f): return json.load(open(f))["url"]
     total=ledger_add(f"lipsync {character}: {text[:30]}",CFG["price_estimates_usd"]["lipsync_pro_per_line"])
     if total>CFG["budget_guard_usd"]: raise SystemExit(f"budget guard: estimated spend {total:.2f} > {CFG['budget_guard_usd']}")
-    aud="data:audio/wav;base64,"+base64.b64encode(open(audio_path,"rb").read()).decode()
+    aud=audio_to_url(audio_path)
     out=fal(CFG["fal_models"]["lipsync"],{"video_url":base_url,"audio_url":aud,"model":"lipsync-2-pro","sync_mode":"bounce"})
     json.dump({"url":out["video"]["url"]},open(f,"w")); return out["video"]["url"]
 # ---- stage 4: assemble the conversation into one video (runs on fal so it also works where files cannot be downloaded) ----
