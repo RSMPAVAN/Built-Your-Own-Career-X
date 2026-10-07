@@ -17,16 +17,24 @@ def frame_data_uri(still):
     im=Image.open(f"{V2}/assets/kit/{still}.jpg").convert("RGB"); w,h=im.size; nh=int(w*9/16); top=(h-nh)//2
     im=im.crop((0,top,w,top+nh)).resize((1280,720)); b=io.BytesIO(); im.save(b,"JPEG",quality=90)
     return "data:image/jpeg;base64,"+base64.b64encode(b.getvalue()).decode()
-def fal(endpoint,body,timeout=1500):
-    r=requests.post(f"https://queue.fal.run/{endpoint}",json=body,timeout=180); j=r.json()
-    if "status_url" not in j: raise RuntimeError(f"{endpoint} submit {r.status_code} {str(j)[:300]}")
-    t=time.time()
-    while time.time()-t<timeout:
-        time.sleep(8); s=requests.get(j["status_url"],timeout=60).json()
-        if s.get("status") in ("COMPLETED","FAILED","ERROR"): break
-    res=requests.get(j["response_url"],timeout=120); out=res.json()
-    if res.status_code!=200 or "video" not in out: raise RuntimeError(f"{endpoint} failed {res.status_code} {str(out)[:300]}")
-    return out
+def fal(endpoint,body,timeout=1500,tries=3):
+    last=None
+    for attempt in range(tries):
+        try:
+            r=requests.post(f"https://queue.fal.run/{endpoint}",json=body,timeout=180); j=r.json()
+            if "status_url" not in j: raise RuntimeError(f"{endpoint} submit {r.status_code} {str(j)[:300]}")
+            t=time.time()
+            while time.time()-t<timeout:
+                time.sleep(8); s=requests.get(j["status_url"],timeout=60).json()
+                if s.get("status") in ("COMPLETED","FAILED","ERROR"): break
+            res=requests.get(j["response_url"],timeout=120); out=res.json()
+            if res.status_code!=200 or "video" not in out: raise RuntimeError(f"{endpoint} failed {res.status_code} {str(out)[:300]}")
+            return out
+        except RuntimeError as e:
+            last=e
+            if any(x in str(e) for x in ("504","503","502","unavailable","timeout")) and attempt<tries-1: time.sleep(20*(attempt+1)); continue
+            raise
+    raise last
 # ---- stage 1: voice ----
 def tts(character,text):
     v=CFG["characters"][character]["voice"]; f=f"{CACHE}/tts_{key(character,v['engine'],v['name'],text)}.wav"
@@ -64,6 +72,11 @@ def lipsync(character,text,base_url,audio_path):
     aud="data:audio/wav;base64,"+base64.b64encode(open(audio_path,"rb").read()).decode()
     out=fal(CFG["fal_models"]["lipsync"],{"video_url":base_url,"audio_url":aud,"model":"lipsync-2-pro","sync_mode":"bounce"})
     json.dump({"url":out["video"]["url"]},open(f,"w")); return out["video"]["url"]
+# ---- stage 4: assemble the conversation into one video (runs on fal so it also works where files cannot be downloaded) ----
+def assemble(results,name="conversation"):
+    ledger_add("merge videos",0.02)
+    out=fal("fal-ai/ffmpeg-api/merge-videos",{"video_urls":[r["video"] for r in results]})
+    return out["video"]["url"]
 def run_line(character,text):
     audio=tts(character,text); sc,heard=verify_audio(audio,text)
     if sc<0.95: raise RuntimeError(f"voice check failed ({sc}): heard '{heard}'")
@@ -77,5 +90,6 @@ if __name__=="__main__":
     with ThreadPoolExecutor(2) as ex: list(ex.map(base_clip,chars))   # base clips once per character, in parallel
     for l in script:
         r=run_line(l["character"],l["text"]); results.append(r); print(json.dumps({k:r[k] for k in ("character","text","voice_check","video")}),flush=True)
-    json.dump(results,open(f"{HERE}/last_run.json","w"),indent=1)
+    final=assemble(results); print("ONE VIDEO:",final,flush=True)
+    json.dump({"lines":results,"final":final},open(f"{HERE}/last_run.json","w"),indent=1)
     print("estimated spend this run (ledger total):",round(sum(x["est_usd"] for x in json.load(open(LEDGER))),2))
