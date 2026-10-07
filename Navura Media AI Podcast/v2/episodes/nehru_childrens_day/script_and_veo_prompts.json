@@ -1,0 +1,67 @@
+[
+ {
+  "id": "L0",
+  "who": "Nithya",
+  "text": "An AI-reimagined conversation, for Children's Day.",
+  "frames": [
+   "v2/kit/S02_nithya_close.jpg"
+  ],
+  "seconds": 4,
+  "veo_prompt": "Shot: tight close-up framing to exactly match the reference still v2/kit/S02_nithya_close.jpg, Nithya filling the right side of frame from mid\u2011chest upward, bridge and sunset cityscape softly blurred through the large studio window behind her. Subject and image consistency: Nithya, the podcast host, in the same teal silk saree with gold border, hair tied back in a low ponytail, subtle natural makeup, seated in the same ergonomic studio chair at the wooden NM podcast table, black NM-branded desk microphone on a stand placed in front of her at the same angle as in the still, with the same wall acoustic panels and warm accent lights visible in the background. Action: Nithya turns slightly toward the off\u2011screen guest to her left, speaking in a calm real podcast conversation, lips clearly articulating the words, making small natural head movements, occasional hand gesture near the mic, blinking normally, then a brief listening cue at the end as she softens her expression. Dialogue: \"An AI-reimagined conversation, for Children's Day.\" spoken in Nithya\u2019s warm, clear Indian English female voice at a natural conversational pace, gently emphasising \"AI-reimagined\" and \"Children's Day.\" Camera: static, no movement or reframing. Lighting and style: match the still exactly with soft, cinematic warm sunset light from the window, gentle practical glows on the panels, clean high\u2011end podcast studio look, shallow depth of field. Audio: only Nithya\u2019s voice plus subtle quiet room tone, no music, no other voices. Negatives: no camera moves, no zooms, no cuts, no on-screen text or graphics, no additional props, no handheld microphones, no headset, no laughter, no exaggerated gestures, no background people, no change in wardrobe or set, no music or sound effects. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L1",
+  "who": "Nithya",
+  "text": "Chacha Nehru, why did children matter so much to you?",
+  "frames": [
+   "v2/kit/S01_nithya_medium.jpg",
+   "v2/kit/S02_nithya_close.jpg"
+  ],
+  "seconds": 6,
+  "veo_prompt": "Shot: medium shot matching v2/kit/S01_nithya_medium.jpg, showing Nithya seated on the left side of frame from waist up with more of the wooden table, empty chair opposite, NM-branded desk microphone between her and camera, large window and illuminated bridge at sunset in the background. Subject and image consistency: Nithya, the podcast host, in the same teal silk saree with gold detailing, same hairstyle and jewelry, same studio chair and NM mug on the table, NM desk microphone on the stand directly in front of her, studio acoustic panels and coloured edge lighting as in the still. Action: she leans slightly forward, turning toward the off-screen guest on the right, asking her question with visible curiosity, lips clearly forming each word, right hand making a small open-palm gesture above the table, natural blinking, then holding a gentle expectant expression at the end as she listens. Dialogue: \"Chacha Nehru, why did children matter so much to you?\" with pronunciation hints: Chacha = 'CHA-cha', Nehru = 'NEH-roo'; delivered in Nithya\u2019s warm, clear Indian English female voice, inquisitive but respectful, with a light upward inflection on \"you?\" Camera: static, locked-off medium framing. Lighting and style: identical to the medium-shot reference, soft cinematic key on Nithya, warm sunset backlight through the window, rich colours and shallow depth of field on background. Audio: only Nithya\u2019s voice plus subtle quiet room tone, no other sounds. Negatives: no camera motion, no zoom, no change of angle or background, no additional characters, no moving the microphone, no on-screen text, no music or sound effects, no exaggerated or comedic gestures, no props added or removed. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L2",
+  "who": "Nehru",
+  "text": "The children of today will make the India of tomorrow.",
+  "frames": [
+   "v2/nehru_kit/N2_guest_medium.jpg",
+   "v2/nehru/nehru_guest.png"
+  ],
+  "seconds": 6,
+  "veo_prompt": "Shot: medium close-up exactly like v2/nehru/nehru_guest.png, framing the guest from mid\u2011torso upward on the right side of frame, seated at the wooden table with the bridge and glowing sunset visible through the window behind. Subject and image consistency: Jawaharlal Nehru, AI-reimagined, in his white achkan with a red rose on his chest and white cap, seated in the same studio chair, both hands resting lightly on the wooden NM podcast table, NM-branded desk microphone on a stand directly in front of him at the same angle and distance as in the still, same studio walls and accent lights. Action: he turns his calm, attentive gaze toward Nithya off\u2011screen to the left, speaking in a composed podcast conversation, lips clearly enunciating the sentence, small natural nods for emphasis, subtle finger movement on the tabletop, occasional blink, then a brief reflective pause as he finishes. Dialogue: \"The children of today will make the India of tomorrow.\" delivered in Nehru\u2019s calm, dignified, warm, thoughtful elderly Indian gentleman voice with a cultured accent, unhurried pacing and a gentle emphasis on \"children\" and \"India of tomorrow.\" Camera: static, no movement or reframing. Lighting and style: match the reference image with soft warm key light on his face, gentle rim from the sunset window, rich cinematic contrast and shallow depth of field on the background bridge lights. Audio: only Nehru\u2019s voice plus subtle quiet room tone, no additional ambience. Negatives: no camera motion, no zoom, no text on screen, no additional props or people, no laughter or exaggerated gestures, no changes to wardrobe, mic stays on the table and is not handheld, no music or sound effects. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L3",
+  "who": "Nithya",
+  "text": "And how should we raise them?",
+  "frames": [
+   "v2/kit/S02_nithya_close.jpg",
+   "v2/kit/S01_nithya_medium.jpg"
+  ],
+  "seconds": 4,
+  "veo_prompt": "Shot: tight close-up matching v2/kit/S02_nithya_close.jpg, Nithya framed from mid\u2011chest upward on the right side of frame with the softly blurred bridge and sunset through the studio window behind her, microphone near the bottom left of frame as in the still. Subject and image consistency: Nithya, the podcast host, in the same teal silk saree with gold border, identical hairstyle and earrings, seated at the same wooden NM podcast table with the same NM-branded desk microphone on its stand in front of her, studio panels and warm accent lighting consistent with the close-up reference. Action: she listens for a beat with a thoughtful expression, then gently turns her head a little more toward Nehru off-screen, asking her follow-up question; her lips clearly articulate each word, with a small hand movement on the table visible at the edge of frame, natural blinking, then she slightly tilts her head and softens her gaze in curiosity as she waits for his response. Dialogue: \"And how should we raise them?\" spoken in Nithya\u2019s warm, clear Indian English female voice at a natural conversational pace, softly emphasising \"raise them\" with a questioning upward intonation. Camera: static close-up with no movement. Lighting and style: exactly as in the close-up still, soft warm key light on her face, sunset glow and coloured edge lighting, cinematic but natural, shallow depth of field. Audio: only Nithya\u2019s voice plus quiet room tone, nothing else. Negatives: no camera moves or zooms, no extra characters, no phone or laptop, no changes to wardrobe or set, microphone remains on the table, no on-screen graphics or subtitles, no music or sound effects, no exaggerated or theatrical gestures. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L4",
+  "who": "Nehru",
+  "text": "The way we bring them up will determine the future of the country.",
+  "frames": [
+   "v2/nehru_kit/N2_guest_medium.jpg",
+   "v2/nehru/nehru_guest.png"
+  ],
+  "seconds": 6,
+  "veo_prompt": "Shot: medium shot identical to v2/nehru_kit/N2_guest_medium.jpg, Jawaharlal Nehru framed from waist up on the right side of frame, seated at the wooden podcast table with more table surface visible, NM microphone in front of him, expansive window and illuminated bridge at sunset in the background. Subject and image consistency: Jawaharlal Nehru, AI-reimagined, in his white achkan with a red rose and white cap, same age and facial features as previous Nehru shot, seated in the same studio chair, hands resting gently on the table near the NM-branded desk microphone, studio acoustic panels and coloured lights matching the reference. Action: he listens to Nithya for a moment with a slight nod, then speaks, turning his head a little toward her off-screen to the left; his lips clearly form each word, he makes a small measured hand gesture with one hand lifting slightly off the table for emphasis then returning, natural blinking and a calm, thoughtful demeanor throughout. Dialogue: \"The way we bring them up will determine the future of the country.\" delivered in Nehru\u2019s calm, dignified, warm, thoughtful elderly Indian gentleman voice with a cultured accent, unhurried, giving weight to \"bring them up\" and \"future of the country.\" Camera: static, locked-off medium framing. Lighting and style: match the medium Nehru still, with soft warm key on his face, subtle rim from the sunset window, rich cinematic colours and shallow background focus. Audio: only Nehru\u2019s voice plus very quiet room tone, no other sounds. Negatives: no camera movement or zoom, no cutaways, no additional people, no change in wardrobe or set design, mic fixed on the table, no on-screen text, no music or sound effects, no exaggerated expressions or large gestures. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ },
+ {
+  "id": "L5",
+  "who": "Nithya",
+  "text": "Happy Children's Day, everyone.",
+  "frames": [
+   "v2/kit/S01_nithya_medium.jpg",
+   "v2/kit/S02_nithya_close.jpg"
+  ],
+  "seconds": 4,
+  "veo_prompt": "Shot: medium shot matching v2/kit/S01_nithya_medium.jpg, Nithya framed from waist up on the left side of frame, full width of the wooden table visible with the opposite empty chair, NM-branded desk microphone placed between her and the camera, big window showing the bridge and colourful sunset city skyline in the background. Subject and image consistency: Nithya, the podcast host, in the same teal silk saree with gold border, same hairstyle, earrings, and studio chair, NM mug on the table as in the reference, acoustic wall panels and warm edge lights matching the still. Action: she smiles warmly toward the off\u2011screen guest and then slightly toward the imagined audience, leaning in just a bit; her lips clearly speak the line, right hand resting near the mug and making a small appreciative gesture, natural blinking, then holding a gentle smile at the end, giving a subtle listening pause as if inviting a shared celebration. Dialogue: \"Happy Children's Day, everyone.\" delivered in Nithya\u2019s warm, clear Indian English female voice, natural pace with a joyful, inclusive tone and gentle emphasis on \"Children's Day\" and \"everyone\"; Children's pronounced clearly as standard. Camera: static medium shot, no movement. Lighting and style: identical to the medium-shot reference of Nithya, soft cinematic warm lighting with sunset glow from the window, balanced studio fill, shallow depth of field on the background. Audio: only Nithya\u2019s voice plus quiet room tone, no crowd noise, no music. Negatives: no camera motion or zooming, no added text or graphics, no confetti or visual effects, no additional characters entering, no change in wardrobe or set, mic remains on the table, no sound effects or music, no exaggerated or cartoonish gestures. Camera: static locked-off frame, no camera movement, no cuts. Keep the studio, faces, wardrobe and the desk microphone identical to the reference still. No subtitles or on-screen text, no music."
+ }
+]
